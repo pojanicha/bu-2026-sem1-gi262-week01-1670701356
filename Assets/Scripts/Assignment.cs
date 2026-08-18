@@ -5,10 +5,10 @@ public class Assignment : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // As01_CheckNumberSign();
-        // As02_GetDayName();
-        // As03_ValidatePassword();
-        // As04_GetGrade();
+        //As01_CheckNumberSign();
+        //As02_GetDayName();
+        //As03_ValidatePassword();
+        As04_GetGrade();
         // As05_IsLeapYear();
         // As06_Calculate();
         // As07_GetSeason();
@@ -23,7 +23,20 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to determine sign
         // Example: Debug.Log("Positive");
-        throw new System.NotImplementedException();
+
+        if (as01Number >= 0)
+        {
+            Debug.Log("Positive");
+
+        }
+        else
+        {
+            Debug.Log("Negative");
+
+        }
+       
+
+
     }
 
     public int as02Day;
@@ -31,7 +44,45 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to return day name
         // Example: Debug.Log("Monday");
-        throw new System.NotImplementedException();
+        if (as02Day == 1)
+        {
+            Debug.Log("Monday");
+        }
+
+        if (as02Day == 2)
+        {
+            Debug.Log("Tuesday");
+        }
+
+        if (as02Day == 3)
+        {
+            Debug.Log("Wednesday");
+        }
+        if (as02Day == 4)
+        {
+            Debug.Log("Thursday");
+        }
+        if (as02Day == 5)
+        {
+            Debug.Log("Friday");
+        }
+        if (as02Day == 6)
+        {
+            Debug.Log("Saturday");
+        }
+        if (as02Day == 7)
+        {
+            Debug.Log("Sunday");
+        }
+        if (as02Day >= 8)
+        {
+            Debug.Log("Invalid day");
+        }
+        if (as02Day <= 0)
+        {
+            Debug.Log("Invalid day");
+
+        }
     }
 
     public string as03InputPassword;
@@ -40,7 +91,14 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement password validation logic
         // Example: Debug.Log("True");
-        throw new System.NotImplementedException();
+
+       // if (as03CorrectPassword == "secret123")
+
+       
+
+        
+
+      
     }
 
     public int as04Score;
@@ -48,7 +106,34 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to return grade
         // Example: Debug.Log("A");
-        throw new System.NotImplementedException();
+        if (as04Score >= 80 )
+        {
+            Debug.Log("A");
+
+        }
+        if (as04Score >= 70 && as04Score <= 75)
+        {
+            Debug.Log("B");
+
+        }
+        if (as04Score >= 60 && as04Score <= 65)
+        {
+            Debug.Log("C");
+
+        }
+
+        if (as04Score >= 50 && as04Score <= 55)
+        {
+            Debug.Log("D");
+
+        }
+
+        if (as04Score <= 49)
+        {
+            Debug.Log("F");
+
+        }
+
     }
 
     public int as05Year;
